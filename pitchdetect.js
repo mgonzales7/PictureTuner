@@ -401,10 +401,10 @@ function updatePitch( time ) {
         else if(thing==="G"){
             notes = ["3","0","0","0","2","3"];
             if(num>150){
-                rotate(45);
+                rotate(1);
             }
             else{
-                scale(-45);
+                scale(-1);
             }
         }
         else if(thing==="A"){
