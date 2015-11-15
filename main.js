@@ -2,7 +2,7 @@ var notes = ['-','-','-','-','-','-'];
 var red=70;
 var green=70;
 var blue=70;
-path1 ="cover.jpg";
+path1 ="JohnCena.png";
 var write = function(){
 		$(".e").append(notes[0]+"-");
 		$(".B").append(notes[1]+"-");
@@ -28,7 +28,6 @@ var fun = function(){
 
 
 var image = function() {
-              path1 ="cover.jpg";
               var img = new Image();
               img.src = path1;
               img.crossOrigin="Anonymous";
@@ -38,14 +37,13 @@ var image = function() {
               img.addEventListener("load", function() {
                  // execute drawImage statements here
                  ctx.drawImage(img,0,0,  img.naturalWidth, img.naturalHeight, 
-                                  0,0,700,               500);
+                                  0,0,679,               799);
               }, false);
           
 
     };
 
 var color = function(){
-			path1 ="cover.jpg";
 			var img = new Image();
             img.src = path1;
             img.crossOrigin="Anonymous";
@@ -60,13 +58,13 @@ var color = function(){
             img.addEventListener("load", function() {
                 // execute drawImage statements here
                 ctx.drawImage(img,0,0,  img.naturalWidth, img.naturalHeight, 
-                                  0,0, 700,               500);
+                                  0,0, 679,               799);
             }, false);
             ctx.globalCompositeOperation = "multiply";
             ctx.fillStyle = color;
             for (var i =0; i<5; i++){
             
-                 ctx.fillRect(0,0,700,500);
+                 ctx.fillRect(0,0,679,500);
             }
 }
 var scale = function(value1, value2, valuex, valuey){
@@ -79,13 +77,13 @@ var scale = function(value1, value2, valuex, valuey){
             img.addEventListener("load", function() {
                 // execute drawImage statements here
                 ctx.drawImage(img,0,0,  img.naturalWidth, img.naturalHeight, 
-                                  0,0, 700,               500);
+                                  0,0, 679,               799);
             }, false);
             ctx.scale(value1, value2);
             img.addEventListener("load", function() {
                 // execute drawImage statements here
                 ctx.drawImage(img,0,0,  img.naturalWidth, img.naturalHeight, 
-                                  0,0, 700,               500);
+                                  0,0, 679,               799);
             }, false);
 
 }
