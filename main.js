@@ -87,7 +87,7 @@ var scale = function(value1, value2, valuex, valuey){
             }, false);
 
 }
-/*
+
 var rotate = function(value){
 			var img = new Image();
             img.src = path1;
@@ -101,5 +101,5 @@ var rotate = function(value){
                                   0,0, 700,               500);
             }, false);
 
-}*/
+}
 $(document).ready(image);

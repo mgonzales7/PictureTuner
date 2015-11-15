@@ -399,13 +399,13 @@ function updatePitch( time ) {
             }
         }
         else if(thing==="G"){
-            notes = ["3","0","0","0","2","3"];/*
+            notes = ["3","0","0","0","2","3"];
             if(num>150){
                 rotate(45);
             }
             else{
                 scale(-45);
-            }*/
+            }
         }
         else if(thing==="A"){
             notes = ["0","2","2","2","0","0"];
