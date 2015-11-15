@@ -400,11 +400,13 @@ function updatePitch( time ) {
         }
         else if(thing==="G"){
             notes = ["3","0","0","0","2","3"];
-            if(num>150){
+            if(num>200){
+                console.log("rotate down")
                 rotate(1);
             }
             else{
                 scale(-1);
+                console.log("rotate up")
             }
         }
         else if(thing==="A"){

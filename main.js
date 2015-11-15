@@ -89,15 +89,19 @@ var scale = function(value1, value2, valuex, valuey){
 }
 
 var rotate = function(value){
+
 			var img = new Image();
-            img.src = path1;
+          img.src = path1;
+      var xOffset = img.naturalWidth / -2;
+      var yOffset = img.naturalHeight / -2;
+
 			var c=document.getElementById("layer1");
 			var ctx=c.getContext("2d");
 			ctx.clearRect(0, 0, 1100, 500);
 			ctx.rotate(value * Math.PI / 180);
             img.addEventListener("load", function() {
                 // execute drawImage statements here
-                ctx.drawImage(img,0,0,  img.naturalWidth, img.naturalHeight, 
+                ctx.drawImage(img,xOffset, yOffset,  img.naturalWidth, img.naturalHeight, 
                                   0,0, 700,               500);
             }, false);
 
